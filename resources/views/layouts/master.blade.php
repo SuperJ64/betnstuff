@@ -3,10 +3,10 @@
     <head>
         <title>Bet 'N Stuff - @yield('title')</title>
         <link href="static/css/master.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script src="http://webfonts.creativecloud.com/alfa-slab-one:n4:default;antic-slab:n4:default.js"</script>
 
         <!-- JSON "FEED" - http://www.nfl.com/liveupdate/scores/scores.json -->
         <script>
