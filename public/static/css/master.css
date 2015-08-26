@@ -1,13 +1,8 @@
 html, body {
-<<<<<<< HEAD
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     height: 100%;
     background-image: #FFFFFF url("static/img/background.jpg") no-repeat center center scroll;
     background-size: cover;
-=======
-    font-family: 'Lato', sans-serif;
-    height: 100%;
->>>>>>> 314b4e3de3deec4cab7f48b295e451fce57f702e
 }
 
 body {
