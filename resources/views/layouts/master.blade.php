@@ -2,6 +2,12 @@
 <html>
     <head>
         <title>Bet 'N Stuff - @yield('title')</title>
+<<<<<<< HEAD
+=======
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100bold" rel="stylesheet" type="text/css">
+>>>>>>> 314b4e3de3deec4cab7f48b295e451fce57f702e
         <link href="static/css/master.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
