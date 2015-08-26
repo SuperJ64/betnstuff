@@ -28,11 +28,10 @@
             <h1><span>BET N STUFF</span></h1>
             <nav>
                 <ul>
-                    <li><a href="#Home">Home</a> |</li>
-                    <li><a href="#Bet">Bet</a> |</li>
-                    <li><a href="#Stuff">Stuff</a> |</li>
-                    <li><a href="#Options">Options</a> |</li>
-                    <li><a href="#Help">Help</a></li>
+                    <li><a href="#play">PLAY</a></li>
+                    <li><a href="#info">PLAYER INFO</a></li>
+                    <li><a href="#pay">PAYMENT</a></li>
+                    <li><a href="#win">WINNERS</a></li>
                 </ul>
             </nav>
         </header>

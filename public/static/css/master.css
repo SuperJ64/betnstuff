@@ -34,10 +34,15 @@ h1 span {
 
 nav {
 	background-color: #7F7F7F;
+	line-height: 17px;
+    font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 }
 nav ul li {
     padding-right: 5px;
     display: inline;
+}
+nav ul li a:visited {
+	color: #FFFFFF;
 }
 nav ul li a:hover {
 	background-color: #C8C8C8;
