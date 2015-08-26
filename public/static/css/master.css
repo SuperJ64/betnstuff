@@ -1,17 +1,14 @@
 html, body {
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     height: 100%;
-    background-image: #FFFFFF url("../img/background.jpg") no-repeat center center scroll;
-    background-size: cover;
 }
 
 body {
     margin: 0;
     padding: 0;
     width: 100%;
-    display: table;
-    font-weight: 100;
-    font-family: 'Lato';
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    background-image: #FFFFFF url("../img/background.jpg") no-repeat center center scroll;
+    background-size: cover;
 }
 
 header {
