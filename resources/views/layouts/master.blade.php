@@ -24,7 +24,7 @@
     </head>
     <body>
         <header>
-            <h1>Welcome to Bet 'N Stuff</h1>
+            <h1><span>BET N STUFF</span></h1>
             <nav>
                 <ul>
                     <li><a href="#Home">Home</a> |</li>

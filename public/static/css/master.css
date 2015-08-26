@@ -24,12 +24,23 @@ h1 {
     font-family: alfa-slab-one, serif;
     font-weight: 400;
 }
+h1 span {
+	padding: 10px;
+	border-width: 3px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    background-color: #CCCCCC;
+}
 
 nav {
+	background-color: #7F7F7F;
 }
 nav ul li {
     padding-right: 5px;
     display: inline;
+}
+nav ul li a:hover {
+	background-color: #C8C8C8;
 }
 
 #sidebar .title {
