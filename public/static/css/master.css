@@ -1,0 +1,87 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 70pt;
+}
+
+nav {
+}
+nav ul li {
+    padding-right: 5px;
+    display: inline;
+}
+
+#sidebar .title {
+    background-color: black;
+    text-align: center;
+    text-decoration: underline;
+    color: lightgray;
+}
+#sidebar {
+    float: left;
+    display: inline;
+    width: 10%;
+    padding: 15px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 10px 10px 5px #888888;
+}
+#sidebar section {
+    margin-top: 15px;
+}
+
+.container {
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.winner {
+    font-size: 50px;
+}
+
+#scores ul {
+    list-style-type: none;
+}
+#scores ul li {
+    padding-bottom: 15px;
+    font-size: 15pt;
+}
+#scores ul li span {
+    font-weight: bold;
+    color: red;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 25px;
+    height: 75px;
+    width: 100%;
+    clear: both;
+    color: white;
+    background-color: lightgray;
+}
