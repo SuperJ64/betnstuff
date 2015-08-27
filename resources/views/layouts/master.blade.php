@@ -13,7 +13,7 @@
             $(document).ready(function() {
                 $.get("http://www.nfl.com/liveupdate/scores/scores.json",dataType='json', function(data) {
                     $.each(data, function(key, value) {
-                        $("#scores ul").append('<div><span>'+ value['home']['abbr']  +'</span>' 
+                        $("#scores").append('<div><span>'+ value['home']['abbr']  +'</span>' 
                                               +'<span>'+      value['home']['score']['T'] +'</span>'
                                               +'<span>'+      value['away']['abbr']       +'</span>'
                                               +'<span>'+      value['away']['score']['T'] +'</span>'
