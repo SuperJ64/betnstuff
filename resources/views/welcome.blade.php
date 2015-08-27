@@ -15,7 +15,5 @@
 @endsection
 
 @section('content')
-    <p class="winner">Jordan Wins!</p>
-
-    <div id="scores"><ul></ul></div>
+    <div id="scores"></div>
 @endsection

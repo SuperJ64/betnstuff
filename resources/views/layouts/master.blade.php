@@ -13,11 +13,11 @@
             $(document).ready(function() {
                 $.get("http://www.nfl.com/liveupdate/scores/scores.json",dataType='json', function(data) {
                     $.each(data, function(key, value) {
-                        $("#scores ul").append('<li>'+ value['home']['abbr'] 
-                                              +' <span>'+ value['home']['score']['T'] +'</span>'
-                                              +' vs. '+ value['away']['abbr']
-                                              +' <span>'+ value['away']['score']['T'] +'</span>'
-                                              +'</li>');
+                        $("#scores ul").append('<div><span>'+ value['home']['abbr']  +'</span>' 
+                                              +'<span>'+      value['home']['score']['T'] +'</span>'
+                                              +'<span>'+      value['away']['abbr']       +'</span>'
+                                              +'<span>'+      value['away']['score']['T'] +'</span>'
+                                              +'</div>');
                     });
                 });
             });
