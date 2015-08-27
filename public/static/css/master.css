@@ -60,20 +60,21 @@ nav ul li a:hover {
 	background-color: #999999;
 }
 
-#sidebar .title {
-    background-color: black;
-    text-align: center;
-    text-decoration: underline;
-    color: lightgray;
-}
 #sidebar {
     float: left;
-    display: inline;
+    display: none;
+    /* display: inline; */
     width: 10%;
     padding: 15px;
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     box-shadow: 10px 10px 5px #888888;
+}
+#sidebar .title {
+    background-color: black;
+    text-align: center;
+    text-decoration: underline;
+    color: lightgray;
 }
 #sidebar section {
     margin-top: 15px;
