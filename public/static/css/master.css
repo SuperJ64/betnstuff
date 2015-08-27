@@ -101,11 +101,11 @@ nav ul li a:hover {
 }
 
 #scores div {
+	color: #000000;
 	padding: 15px;
     background-color: #FFFFFF;
-}
-#scores div span {
-	font-color: #000000;
+    margin-bottom: 15px;
+    width: 200px;
 }
 
 footer {
