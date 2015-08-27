@@ -44,6 +44,7 @@ nav ul li {
     display: inline;
 }
 nav ul li a {
+	width: 100px;
 	font-size: 11pt;
 	padding: 10px 20px 10px 20px;
 	color: #FFFFFF;
@@ -113,11 +114,9 @@ nav ul li a:hover {
 }
 
 footer {
+	font-size: 8pt;
     text-align: center;
-    padding-top: 25px;
-    height: 75px;
     width: 100%;
     clear: both;
     color: white;
-    background-color: lightgray;
 }
