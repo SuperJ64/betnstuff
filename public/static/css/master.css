@@ -41,6 +41,11 @@ nav ul li {
     padding-right: 5px;
     display: inline;
 }
+nav ul li a {
+	padding: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
 nav ul li a:visited {
 	color: #FFFFFF;
 }
