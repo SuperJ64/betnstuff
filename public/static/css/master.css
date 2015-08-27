@@ -51,8 +51,11 @@ nav ul li a {
 nav ul li a:visited {
 	color: #FFFFFF;
 }
+nav ul li a:active {
+    background-color: #C8C8C8;
+}
 nav ul li a:hover {
-	background-color: #C8C8C8;
+	background-color: #999999;
 }
 
 #sidebar .title {
