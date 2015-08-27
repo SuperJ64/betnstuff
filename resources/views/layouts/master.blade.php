@@ -28,7 +28,7 @@
             <h1><span>BET N STUFF</span></h1>
             <nav>
                 <ul>
-                    <li style="background-color: #C8C8C8"><a href="#play">PLAY</a></li>
+                    <li><a href="#play" style="background-color: #C8C8C8">PLAY</a></li>
                     <li><a href="#info">PLAYER INFO</a></li>
                     <li><a href="#win">WINNERS</a></li>
                     <li><a href="#pay">PAYMENT</a></li>
