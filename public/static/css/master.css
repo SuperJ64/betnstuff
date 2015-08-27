@@ -103,7 +103,9 @@ nav ul li a:hover {
 #scores div {
 	padding: 15px;
     background-color: #FFFFFF;
-    font-color: #000000;
+}
+#scores div span {
+	font-color: #000000;
 }
 
 footer {
