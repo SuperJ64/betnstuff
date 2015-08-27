@@ -105,7 +105,8 @@ nav ul li a:hover {
 	padding: 15px;
     background-color: #FFFFFF;
     margin-bottom: 15px;
-    width: 200px;
+    boarder: 2px solid #7F7F7F;
+    width: 425px;
 }
 
 footer {
