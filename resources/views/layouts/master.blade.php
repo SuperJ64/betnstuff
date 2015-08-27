@@ -15,7 +15,7 @@
                     $.each(data, function(key, value) {
                         $("#scores").append('<div><span>'+ value['home']['abbr']  +'</span>' 
                                               +' <span style="color:red">'+      value['home']['score']['T'] +'</span>'
-                                              +'vs. <span>'+      value['away']['abbr']       +'</span>'
+                                              +' vs. <span>'+      value['away']['abbr']       +'</span>'
                                               +' <span style="color:red">'+      value['away']['score']['T'] +'</span>'
                                               +'</div>');
                     });
