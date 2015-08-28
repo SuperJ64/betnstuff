@@ -43,10 +43,8 @@
 	            @show
 	        </aside>
 	
-	        <div class="container">
-	            <div class="content">
-	                <div>@yield('content')</div>
-	            </div>
+	        <div id="center">
+	            @yield('content')
 	        </div>
         </div>
         

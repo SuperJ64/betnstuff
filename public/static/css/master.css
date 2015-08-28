@@ -86,15 +86,12 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-.container {
+#center {
     width: 90%;
     text-align: center;
     vertical-align: middle;
 }
-
-.content {
-	margin-top: 25px;
-	padding-bottom: 25px;
+#center div {
     text-align: center;
     display: inline-block;
 }
