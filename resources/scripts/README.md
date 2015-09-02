@@ -1,0 +1,1 @@
+This folder will be used to contain helper PHP scripts.
