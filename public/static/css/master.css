@@ -46,8 +46,8 @@ nav ul li {
 nav ul li a {
 	width: 100px;
 	display: inline-block;
-	font-size: 11pt;
-	padding: 10px 20px 10px 20px;
+	font-size: 0.8em;
+	padding: 10px;
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -86,26 +86,27 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-.container {
-    width: 90%;
+#center {
+    width: 100%;
     text-align: center;
     vertical-align: middle;
-}
-
-.content {
-    text-align: center;
-    display: inline-block;
 }
 
 .winner {
     font-size: 50px;
 }
 
+#scores {
+	margin-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	display: inline-block;
+}
 #scores div {
 	color: #000000;
 	padding: 15px;
     background-color: #FFFFFF;
-    margin-bottom: 15px;
+    margin-top: 15px;
     border: 2px solid #7F7F7F;
     width: 425px;
 }
