@@ -18,7 +18,7 @@ class UserController extends Controller
     */
     public function getScores($id)
     {
-        print "Hello World";
+        return view('welcome');
     }
 }
 ?>
