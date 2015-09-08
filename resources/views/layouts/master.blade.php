@@ -15,9 +15,9 @@
                 // http://www.nfl.com/liveupdate/scorestrip/ss.xml
                 $.get("http://www.nfl.com/liveupdate/scores/scores.json",dataType='json', function(data) {
                     $.each(data, function(key, value) {
-                        $("#scores").append('<div><img style="float:left; clear:both; border:1px solid #999999;" src="http://i.nflcdn.com/static/site/7.1/img/teams/'+value['home']['abbr']+'/'+value['home']['abbr']+'_logo-80x90.gif" /><span>'+ value['home']['abbr']  +'</span>' 
+                        $("#scores").append('<div><img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'+value['home']['abbr']+'.png" /><span>'+ value['home']['abbr']  +'</span>' 
                                               +' <span style="color:red; font-size:35pt;">'+      value['home']['score']['T'] +'</span>'
-                                              +' <img style="border:1px solid #999999;" src="http://i.nflcdn.com/static/site/7.1/img/teams/'+value['away']['abbr']+'/'+value['away']['abbr']+'_logo-80x90.gif" /><span>'+      value['away']['abbr']       +'</span>'
+                                              +' <img style="width:85px; height:85px; border:1px solid #999999;" src="static/img/teams/'+value['away']['abbr']+'.png" /><span>'+      value['away']['abbr']       +'</span>'
                                               +' <span style="color:red; font-size:35pt;">'+      value['away']['score']['T'] +'</span>'
                                               +'</div>');
                     });
