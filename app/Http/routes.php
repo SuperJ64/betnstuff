@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('get_scores/', 'UserController@getScores');
+Route::get('get_scores', 'Scores@getScores');
