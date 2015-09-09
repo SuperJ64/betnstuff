@@ -32,20 +32,30 @@ class Scores extends Controller
             print $game['home']['score']['T']."&nbsp;";
             print $game['away']['score']['T']."<br/>";
             
-            /*
-            DB::table('team')->insert(
-                ['abbr' => $game['home']['abbr']]
-            );
-            DB::table('team')->insert(
-                ['abbr' => $game['away']['abbr']]
-            );
-
-            DB::table('game')->insert(
+            
+            // Get team IDs
+            $home_team = DB::table('team')->where('abbr', $game['home']['abbr'])->value('id');
+            $away_team = DB::table('team')->where('abbr', $game['away']['abbr'])->value('id');
+            
+            // Save teams
+            if (! $home_team > 0) {
+            	print "Inserting home team into DB";
+                //$home_team = DB::table('team')->insertGetId(['abbr' => $game['home']['abbr']]);
+            }
+            if (! $away_team > 0) {
+            	print "Inserting away team into DB";
+                //$away_team = DB::table('team')->insertGetId(['abbr' => $game['away']['abbr']]);
+            }
+            
+            // Save game
+            print "Inserting game for ". $home_team ." ". $away_team;
+            /*DB::table('game')->insert(
                 ['home_team_id' => $home_team],
                 ['away_team_id' => $away_team],
                 ['start' => $game['home']['abbr']]
-            );
-            */
+            );*/
+            
+            // Save scores
         }
 
         $response = array('exit_code' => 'success');
