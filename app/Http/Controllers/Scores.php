@@ -28,9 +28,11 @@ class Scores extends Controller
         $ss_json = json_decode($content, true);
 
         foreach ($scores_json as $gid => $game) {
-            //print $gid."&nbsp;";
-            //print $game['home']['score']['T']."&nbsp;";
-            //print $game['away']['score']['T']."<br/>";
+            foreach ($ss_json['gms'] as $game_data) {
+            	if ($game_data['eid'] == $gid) {
+            		$game['data']=$game_data;
+            	}
+            }
             
             // Get team IDs
             $home_team = DB::table('team')->where('abbr', $game['home']['abbr'])->value('id');
@@ -38,23 +40,36 @@ class Scores extends Controller
             
             // Save teams
             if (! $home_team > 0) {
-            	print "Inserting home team into DB";
-                //$home_team = DB::table('team')->insertGetId(['abbr' => $game['home']['abbr']]);
+            	print "Inserting home team into DB<br/>";
+                $home_team = DB::table('team')->insertGetId(['abbr' => $game['home']['abbr']]);
             }
             if (! $away_team > 0) {
-            	print "Inserting away team into DB";
-                //$away_team = DB::table('team')->insertGetId(['abbr' => $game['away']['abbr']]);
+            	print "Inserting away team into DB<br/>";
+                $away_team = DB::table('team')->insertGetId(['abbr' => $game['away']['abbr']]);
             }
             
+            // Determine start time
+            $year = substr($gid,0,4);
+            $month = substr($gid,4,2);
+            $day = substr($gid,6,2);
+            $time = split(':',$game['data']['t']);
+            $hours = $time[0];
+            $minutes = $time[1];
+            $seconds = 0;
+            $start = date("Y-m-d H:i:s", mktime($hours, $minutes, $seconds, $month, $day, $year));
+            
             // Save game
-            print "Inserting game for ". $home_team ." ". $away_team;
+            print "Inserting game for ". $home_team ." ". $away_team ." ". $start ."<br/>";
             /*DB::table('game')->insert(
-                ['home_team_id' => $home_team],
-                ['away_team_id' => $away_team],
-                ['start' => $game['home']['abbr']]
+                ['home_team_id' => $home_team,
+            	 'away_team_id' => $away_team,
+                 'start' => $start]
             );*/
             
             // Save scores
+            //print $gid."&nbsp;";
+            print $game['home']['score']['T'] ." ". $game['away']['score']['T']."<br/>";
+            print "<p>----------------------------------------</p>";
         }
 
         $response = array('exit_code' => 'success');
