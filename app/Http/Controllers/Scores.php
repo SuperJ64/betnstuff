@@ -40,8 +40,8 @@ class Scores extends Controller
             if (! $home_team > 0) {
             	print "Inserting home team into DB<br/>";
                 $home_team = DB::table('team')->insertGetId([
-                		'name' => $game['hnn'],
-                		'abbr' => $game['data']['home']['abbr']
+                    'name' => $game['hnn'],
+                    'abbr' => $game['data']['home']['abbr']
                 ]);
             } else {
                 print "Updating home team in DB<br/>";
@@ -50,8 +50,8 @@ class Scores extends Controller
             if (! $away_team > 0) {
                 print "Inserting away team into DB<br/>";
                 $away_team = DB::table('team')->insertGetId([
-                        'name' => $game['vnn'],
-                        'abbr' => $game['data']['away']['abbr']
+                    'name' => $game['vnn'],
+                    'abbr' => $game['data']['away']['abbr']
                 ]);
             } else {
                 print "Updating away team in DB<br/>";
@@ -68,13 +68,21 @@ class Scores extends Controller
             $seconds = 0;
             $start = date("Y-m-d H:i:s", mktime($hours, $minutes, $seconds, $month, $day, $year));
             
+            // Pull game ID
+            $gid = DB::table('game')
+                ->where('home_team_id', $home_team)
+                ->where('away_team_id', $away_team)
+                ->value('id');
+            
             // Save game
-            print "Inserting game for ". $home_team ." ". $away_team ." ". $start ."<br/>";
-            $gid = DB::table('game')->insertGetId(
-                ['home_team_id' => $home_team,
-            	 'away_team_id' => $away_team,
-                 'start' => $start]
-            );
+            if (! $gid > 0) {
+                print "Inserting game for ". $home_team ." ". $away_team ." ". $start ."<br/>";
+                $gid = DB::table('game')->insertGetId([
+                    'home_team_id' => $home_team,
+            	    'away_team_id' => $away_team,
+                    'start' => $start
+                ]);
+            }
             
             // Save scores
             print "Inserting scores ". $game['data']['home']['score']['T']  ." ". $game['data']['away']['score']['T'] ."<br/>";
