@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     $.get("/index.php/ajax",dataType='json', function(data) {
-    	$("#scores").append('<textarea>'+data+'</textarea>');
+    	$("#scores").append('<textarea>'+data.1+'</textarea>');
     	/*
         $.each(data, function(key, value) {
             $("#scores").append('<div>'
