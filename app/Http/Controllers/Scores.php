@@ -70,7 +70,7 @@ class Scores extends Controller
         }
 
         $response = array('exit_code' => 'success');
-        return $response;
+        //return $response;
     }
 }
 ?>
