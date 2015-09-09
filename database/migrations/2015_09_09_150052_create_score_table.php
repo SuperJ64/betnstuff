@@ -20,10 +20,12 @@ class CreateScoreTable extends Migration
             $table->smallInteger('home_q2');
             $table->smallInteger('home_q3');
             $table->smallInteger('home_q4');
+            $table->smallInteger('home_q5');
             $table->smallInteger('away_q1');
             $table->smallInteger('away_q2');
             $table->smallInteger('away_q3');
             $table->smallInteger('away_q4');
+            $table->smallInteger('away_q5');
             $table->timestamps();
         });
     }
