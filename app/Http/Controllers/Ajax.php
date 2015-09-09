@@ -31,8 +31,7 @@ class Ajax extends Controller
             $json_games[$game->id]['away']['team'] = DB::table('team')->select('name','abbr')->where('id',$game->away_team_id)->value('abbr');
         }
         
-        $response = json_encode($json_games);
-        return $response;
+        return response()->json($json_games);
     }
 }
 ?>
