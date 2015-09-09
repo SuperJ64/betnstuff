@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     $.get("/index.php/ajax",dataType='json', function(data) {
-    	alert(data["1"]['game']['start']);
+    	alert(data["1"]);
     	/*
         $.each(data, function(key, value) {
             $("#scores").append('<div>'
