@@ -7,12 +7,12 @@ $(document).ready(function() {
         $.each(data, function(key, value) {
             $("#scores").append('<div>'
                 +'<img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'
-                + value['hteam']['abbr'] +'.png" /><span>'+ value['hteam']['name'] +'</span>'
-                +' <span style="color:red; font-size:35pt;">'+ value['score']['home_q1'] +'</span>'
+                + value['home']['team']['abbr'] +'.png" /><span>'+ value['home']['team']['name'] +'</span>'
+                +' <span style="color:red; font-size:35pt;">'+ value['home']['score']['home_q1'] +'</span>'
 
                 +' <img style="width:85px; height:85px; border:1px solid #999999;" src="static/img/teams/'
-                + value['vteam']['abbr']+'.png" /><span>'+ value['vteam']['name'] +'</span>'
-                +' <span style="color:red; font-size:35pt;">'+ value['vteam']['score']['away_q1'] +'</span>'
+                + value['away']['team']['abbr']+'.png" /><span>'+ value['away']['team']['name'] +'</span>'
+                +' <span style="color:red; font-size:35pt;">'+ value['away']['score']['away_q1'] +'</span>'
             +'</div>');
         });
     });
