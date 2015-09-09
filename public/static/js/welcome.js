@@ -2,9 +2,9 @@
 
 $(document).ready(function() {
     $.get("/index.php/ajax",dataType='json', function(data) {
+    	alert(data["1"]['game']['start']);
+    	/*
         $.each(data, function(key, value) {
-        	alert($key);
-        	/*
             $("#scores").append('<div>'
                 +'<img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'
                 + value['hteam']['abbr'] +'.png" /><span>'+ value['hteam']['name'] +'</span>'
