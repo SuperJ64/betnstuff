@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
     $.get("/index.php/ajax",dataType='json', function(data) {
-    	$("#scores").append('<textarea>'+data+'</textarea>');
-    	/*
+    	//$("#scores").append('<textarea>'+data+'</textarea>');
+    	
         $.each(data, function(key, value) {
             $("#scores").append('<div>'
                 +'<img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'
@@ -15,6 +15,5 @@ $(document).ready(function() {
                 +' <span style="color:red; font-size:35pt;">'+ value['vteam']['score']['away_q1'] +'</span>'
             +'</div>');
         });
-        */
     });
 });
