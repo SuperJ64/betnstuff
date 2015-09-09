@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bet 'N Stuff - @yield('title')</title>
+        <title>@yield('title')</title>
         <link href="static/css/master.css" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-        <!-- JSON "FEED" - http://www.nfl.com/liveupdate/scores/scores.json -->
         <script>
             $(document).ready(function() {
-                // Also availble in XML feed
-                // http://www.nfl.com/liveupdate/scorestrip/ss.xml
-                $.get("http://www.nfl.com/liveupdate/scores/scores.json",dataType='json', function(data) {
+                $.get("/index.php/ajax",dataType='json', function(data) {
                     $.each(data, function(key, value) {
-                        $("#scores").append('<div><img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'+value['home']['abbr']+'.png" /><span>'+ value['home']['abbr']  +'</span>' 
-                                              +' <span style="color:red; font-size:35pt;">'+      value['home']['score']['T'] +'</span>'
-                                              +' <img style="width:85px; height:85px; border:1px solid #999999;" src="static/img/teams/'+value['away']['abbr']+'.png" /><span>'+      value['away']['abbr']       +'</span>'
-                                              +' <span style="color:red; font-size:35pt;">'+      value['away']['score']['T'] +'</span>'
-                                              +'</div>');
+                        $("#scores").append('<div>'
+                            +'<img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'
+                                + value['hteam']['abbr'] +'.png" /><span>'+ value['hteam']['name'] +'</span>'
+                            +' <span style="color:red; font-size:35pt;">'+ value['score']['home_q1'] +'</span>'
+
+                            +' <img style="width:85px; height:85px; border:1px solid #999999;" src="static/img/teams/'
+                                + value['vteam']['abbr']+'.png" /><span>'+ value['vteam']['name'] +'</span>'
+                            +' <span style="color:red; font-size:35pt;">'+ value['vteam']['score']['away_q1'] +'</span>'
+                        +'</div>');
                     });
                 });
             });
