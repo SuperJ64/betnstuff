@@ -28,10 +28,9 @@ class Scores extends Controller
         $ss_json = json_decode($content, true);
 
         foreach ($scores_json as $gid => $game) {
-            print $gid."&nbsp;";
-            print $game['home']['score']['T']."&nbsp;";
-            print $game['away']['score']['T']."<br/>";
-            
+            //print $gid."&nbsp;";
+            //print $game['home']['score']['T']."&nbsp;";
+            //print $game['away']['score']['T']."<br/>";
             
             // Get team IDs
             $home_team = DB::table('team')->where('abbr', $game['home']['abbr'])->value('id');
