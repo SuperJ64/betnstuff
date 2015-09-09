@@ -52,7 +52,7 @@ class Scores extends Controller
             $year = substr($gid,0,4);
             $month = substr($gid,4,2);
             $day = substr($gid,6,2);
-            $time = split(':',$game['data']['t']);
+            $time = explode(':',$game['data']['t']);
             $hours = $time[0];
             $minutes = $time[1];
             $seconds = 0;
