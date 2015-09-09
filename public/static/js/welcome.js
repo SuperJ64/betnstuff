@@ -1,9 +1,9 @@
 // Ajax method for displaying game data
 
 $(document).ready(function() {
+	// Fetch records via ajax
     $.get("/index.php/ajax",dataType='json', function(data) {
-    	//$("#scores").append('<textarea>'+data+'</textarea>');
-    	
+        // Iterate over each element and insert them into the scores section
         $.each(data, function(key, value) {
             $("#scores").append('<div>'
                 +'<img style="float:left; width:85px; height:85px; clear:both; border:1px solid #999999;" src="static/img/teams/'
