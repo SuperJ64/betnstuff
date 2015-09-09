@@ -29,7 +29,8 @@ class Scores extends Controller
 
         foreach ($ss_json['gms'] as $game) {
         	// Map game data to game
-            $game['data'] = $scores_json[$game["eid"]];
+        	$eid = $scores_json[$game["eid"]];
+            $game['data'] = $scores_json[$eid];
             
             
             // Get team IDs
@@ -47,9 +48,9 @@ class Scores extends Controller
             }
             
             // Determine start time
-            $year = substr($gid,0,4);
-            $month = substr($gid,4,2);
-            $day = substr($gid,6,2);
+            $year = substr($eid,0,4);
+            $month = substr($eid,4,2);
+            $day = substr($eid,6,2);
             $time = explode(':',$game['t']);
             $hours = $time[0];
             $minutes = $time[1];
