@@ -14,7 +14,7 @@ $(document).ready(function() {
                 + value['vteam']['abbr']+'.png" /><span>'+ value['vteam']['name'] +'</span>'
                 +' <span style="color:red; font-size:35pt;">'+ value['vteam']['score']['away_q1'] +'</span>'
             +'</div>');
-            */
         });
+        */
     });
 });
