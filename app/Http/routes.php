@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', function () { return view('welcome'); });
 Route::get('get_scores', 'Scores@getScores');
+Route::get('ajax', 'Ajax@getGames');
