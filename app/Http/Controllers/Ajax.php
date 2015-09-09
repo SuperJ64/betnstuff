@@ -35,9 +35,9 @@ class Ajax extends Controller
         	if ( !$home_total >= 0){ $json_games[$game->id]['home']['score'] = 'NA'; }
         	
             $json_games[$game->id]['home']['team'] = DB::table('team')
-                ->select('name','abbr')
+                ->select('abbr')
                 ->where('id',$game->home_team_id)
-                ->get();
+                ->value('abbr');
             
             // Get scores and team info for away team
             $away_total = DB::table('score')
@@ -47,9 +47,9 @@ class Ajax extends Controller
             if ( !$away_total >= 0){ $json_games[$game->id]['away']['score'] = 'NA'; }
             
             $json_games[$game->id]['away']['team'] = DB::table('team')
-                ->select('name','abbr')
+                ->select('abbr')
                 ->where('id',$game->away_team_id)
-                ->get();
+                ->value('abbr');
         }
         
         return response()->json($json_games);
