@@ -33,7 +33,7 @@ class Ajax extends Controller
                 ->select(DB::raw('(home_q1 + home_q2 + home_q3 + home_q4 + home_q5) AS t'))
         	    ->where('game_id',$game->id)
         	    ->value('t');
-        	if ( !$home_total >= 0){ $json_games[$game->id]['home']['score'] = 'NA'; }
+        	//if ( !$home_total >= 0){ $json_games[$game->id]['home']['score'] = 'NA'; }
         	
             $json_games[$game->id]['home']['team']['abbr'] = DB::table('team')
                 ->select('abbr')
