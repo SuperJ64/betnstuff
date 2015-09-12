@@ -29,9 +29,10 @@ class Ajax extends Controller
             
         	// Get scores and team info for home team
         	$home_total = DB::table('score')
-        	    ->select('home_q1')
+        	    //->select('home_q1')
+                ->select(DB::raw('(home_q1,home_q2,home_q3,home_q4,home_q5) as t'))
         	    ->where('game_id',$game->id)
-        	    ->value('home_q1');
+        	    ->value('t');
         	if ( !$home_total >= 0){ $json_games[$game->id]['home']['score'] = 'NA'; }
         	
             $json_games[$game->id]['home']['team']['abbr'] = DB::table('team')
