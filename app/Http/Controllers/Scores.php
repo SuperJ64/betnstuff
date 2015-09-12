@@ -78,6 +78,7 @@ class Scores extends Controller
             if (! $gid > 0) {
                 print "Inserting game for ". $home_team ." ". $away_team ." ". $start ."<br/>";
                 $gid = DB::table('game')->insertGetId([
+                	'eid' => $eid,
                     'home_team_id' => $home_team,
             	    'away_team_id' => $away_team,
                     'start' => $start
