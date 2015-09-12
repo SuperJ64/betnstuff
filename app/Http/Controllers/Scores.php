@@ -87,7 +87,7 @@ class Scores extends Controller
             // Save scores
             print "Inserting scores ". $game['data']['home']['score']['T']  ." ". $game['data']['away']['score']['T'] ."<br/>";
             if ($game['data']['home']['score']['T'] != Null && $game['data']['home']['score']['T'] != Null) {
-                DB::table('scrore')->insert([
+                DB::table('score')->insert([
                     'game_id' => $gid,
                     'home_q1' => $game['data']['home']['score']['1'],
                     'home_q2' => $game['data']['home']['score']['2'],
