@@ -13,11 +13,18 @@ class CreateGamesTable extends Migration
      */
     public function up()
     {
+
+        /**
+         * Games table holds all information for games ran.
+         * Schedulers will update this table annually to get game data,
+         * and will update hourly on Thrs, Sun, Mon to get score data.
+         */
         Schema::create('games', function (Blueprint $table) {
             $table->increments('id');
             $table->string('home');
             $table->string('away');
             $table->integer('week')->unsigned();
+            $table->integer('year')->unsigned();
             $table->dateTime('start');
             $table->unsignedInteger('home_q1')->default('0');
             $table->unsignedInteger('home_q2')->default('0');

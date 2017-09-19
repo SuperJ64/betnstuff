@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8551d06-9753-4614-8b79-f37a98f125d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/User.php" afterPath="$PROJECT_DIR$/server/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/server/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/migrations/2017_09_18_223046_create_games_table.php" afterPath="$PROJECT_DIR$/server/database/migrations/2017_09_18_223046_create_games_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/server/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/web.php" afterPath="$PROJECT_DIR$/server/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -155,7 +153,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1718" y="110" width="1616" height="886" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30912596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
