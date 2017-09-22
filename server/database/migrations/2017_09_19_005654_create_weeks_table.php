@@ -32,6 +32,31 @@ class CreateWeeksTable extends Migration
             $table->timestamps();
         });
 
+        /**
+         * week_user tracks how many credits a player payed for a given week
+         * and how many points they got for that week
+         */
+        Schema::create('user_week', function (Blueprint $table) {
+           $table->unsignedInteger('user_id');
+           $table->unsignedInteger('week_id');
+           $table->unsignedInteger('credits');
+           $table->unsignedInteger('points');
+        });
+
+        /**
+         * There are multiple games per week
+         * and multiple weeks per pool
+         * and multiple games per week
+         * and a player makes one pick per game, per week, per pool
+         */
+        Schema::create('picks', function (Blueprint $table) {
+           $table->unsignedInteger('user_id'); //the user that made this pick
+            $table->unsignedInteger('game_id'); //the game this pick is for
+            $table->unsignedInteger('week_id'); //the week this pick is for this ties the pick to the pool.
+            $table->string('pick'); //the users pick to win.
+            $table->unsignedInteger('points')->default(1); //the number of points this is worth if correct.
+        });
+
     }
 
     /**
@@ -41,6 +66,8 @@ class CreateWeeksTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('user_week');
+        Schema::dropIfExists('picks');
         Schema::dropIfExists('weeks');
     }
 }

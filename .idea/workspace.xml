@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8551d06-9753-4614-8b79-f37a98f125d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/migrations/2017_09_18_223046_create_games_table.php" afterPath="$PROJECT_DIR$/server/database/migrations/2017_09_18_223046_create_games_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/server/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/RegisterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/ResetPasswordController.php" afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/ResetPasswordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/server/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/migrations/2017_09_18_222812_create_pools_table.php" afterPath="$PROJECT_DIR$/server/database/migrations/2017_09_18_222812_create_pools_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/migrations/2017_09_19_005654_create_weeks_table.php" afterPath="$PROJECT_DIR$/server/database/migrations/2017_09_19_005654_create_weeks_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/database/seeds/GamesTableSeeder.php" afterPath="$PROJECT_DIR$/server/database/seeds/GamesTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/web.php" afterPath="$PROJECT_DIR$/server/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Scores.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -50,10 +57,12 @@
     </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/server/node_modules" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-1718" />
-    <option name="y" value="110" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1628" />
     <option name="width" value="1616" />
     <option name="height" value="886" />
   </component>
@@ -152,7 +161,8 @@
     <option name="totallyTimeSpent" value="4098000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1718" y="110" width="1616" height="886" extended-state="1" />
+    <frame x="-1628" y="0" width="1616" height="886" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30912596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -348,7 +358,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Scores.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           <folding />
         </state>
       </provider>

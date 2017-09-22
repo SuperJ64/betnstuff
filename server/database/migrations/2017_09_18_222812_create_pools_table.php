@@ -57,7 +57,8 @@ class CreatePoolsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pools');
+
         Schema::dropIfExists('pool_user');
+        Schema::dropIfExists('pools');
     }
 }

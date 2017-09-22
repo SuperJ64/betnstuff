@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
 
-Route::get('get_scores', 'Scores@getScores');
-Route::get('ajax', 'Ajax@getGames');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/logout', function () {
+   Auth::logout();
+   return redirect('/');
+});

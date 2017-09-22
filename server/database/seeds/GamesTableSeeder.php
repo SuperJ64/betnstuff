@@ -15,6 +15,8 @@ class GamesTableSeeder extends Seeder
     public function run()
     {
 
+        //this will populate the games table with all games for the current season.
+        //you can populate multiple seasons by adding an additional for loop to loop through multiple seasons.
         $season = date('Y');
 
         for ($week = 1; $week <= 17; $week++) {
