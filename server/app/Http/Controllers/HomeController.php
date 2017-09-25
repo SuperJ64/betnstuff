@@ -28,4 +28,14 @@ class HomeController extends Controller
 
         return view('home', ['games'=>$playing]);
     }
+
+    public function admin() {
+        $admin = Auth::user()->running()->get();
+
+        return view('admin', ['games'=>$admin]);
+    }
+
+    public function create() {
+        return redirect('/');
+    }
 }

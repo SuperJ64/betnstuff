@@ -5,16 +5,21 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="{{ route('home') }}">Games</a>
+                <a href="{{ route('admin') }}">Admin</a>
             </li>
-            <li class="breadcrumb-item active">My Games</li>
+            <li class="breadcrumb-item active">Admin</li>
         </ol>
         <div class="card mb-3">
-            <div class="card-header">Games</div>
+            <div class="card-header">
+                <h4 class="pull-left">Games</h4>
+                <div class="pull-right">
+                    <a href="{{ route('create.game') }}" class="btn btn-outline-primary">Create Game</a>
+                </div>
+            </div>
             <div class="card-body">
 
                 @if($games->isEmpty())
-                    You are not currently playing in any games
+                    You have not created any games
                 @else
                     <dl>
                         @foreach($games as $game)

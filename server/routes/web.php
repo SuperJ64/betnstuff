@@ -14,6 +14,18 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@admin')->name('admin');
+
+Route::get('/create', function () {
+    return view('create');
+})->name('create.game');
+Route::post('/create', 'HomeController@create')->name('new.game');
+
+
+
+
+
+
 
 Route::get('/logout', function () {
    Auth::logout();
