@@ -16,18 +16,17 @@
             <div class="card-body">
                 <form method="POST" action="{{ route('new.game') }}">
                     {{ csrf_field() }}
-                    
                     <div class="form-group">
                         <label for="name">Pool Name</label>
-                        <input class="form-control" id="name" type="text" aria-describedby="nameHelp"
+                        <input class="form-control" name="name" type="text" aria-describedby="nameHelp"
                                placeholder="Enter Name">
                     </div>
                     <div class="form-group">
                         <label for="entry">Buy In</label>
-                        <input class="form-control col-3" id="entry" type="number" placeholder="Weekly entry fee in credits">
+                        <input class="form-control col-3" name="entry" type="number" placeholder="Weekly entry fee in credits">
                     </div>
                     <div class="form-group">
-                        <select class="custom-select">
+                        <select name="type" class="custom-select">
                             <option selected>Select a game type</option>
                             <option value="1">Default</option>
                             <option value="2">Ranking</option>
@@ -36,7 +35,7 @@
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label" for="private">
-                                <input class="form-check-input" type="checkbox" id="private">Private Game</label>
+                                <input class="form-check-input" type="checkbox" name="private">Private Game</label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -54,28 +53,28 @@
                                 <div class="form-group row">
                                     <label for="wfirst" class="col-sm-2 col-form-label">First</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="wfirst" type="number">
+                                        <input class="form-control" name="wfirst" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="wsecond" class="col-sm-2 col-form-label">Second</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="wsecond" type="number">
+                                        <input class="form-control" name="wsecond" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="wthird" class="col-sm-2 col-form-label">First</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="wthird" type="number">
+                                        <input class="form-control" name="wthird" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="season" class="col-sm-2 col-form-label">Season</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="season" type="number">
+                                        <input class="form-control" name="season" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>
@@ -85,21 +84,21 @@
                                 <div class="form-group row">
                                     <label for="sfirst" class="col-sm-2 col-form-label">First</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="sfirst" type="number">
+                                        <input class="form-control" name="sfirst" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="ssecond" class="col-sm-2 col-form-label">Second</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="ssecond" type="number">
+                                        <input class="form-control" name="ssecond" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="sthird" class="col-sm-2 col-form-label">First</label>
                                     <div class="col-5 input-group">
-                                        <input class="form-control" id="sthird" type="number">
+                                        <input class="form-control" name="sthird" type="number">
                                         <span class="input-group-addon">%</span>
                                     </div>
                                 </div>

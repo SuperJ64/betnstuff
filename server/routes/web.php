@@ -19,6 +19,7 @@ Route::get('/admin', 'HomeController@admin')->name('admin');
 Route::get('/create', function () {
     return view('create');
 })->name('create.game');
+
 Route::post('/create', 'HomeController@create')->name('new.game');
 
 
